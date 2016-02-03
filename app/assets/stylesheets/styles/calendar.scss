@@ -1,0 +1,73 @@
+table {
+  &.table {
+    width: 100%;
+  }
+
+  thead tr th {
+    background: $bg;
+    width: 14.3%;
+    text-align: center;
+  }
+
+  tbody tr td {
+    background: $bg;
+    height: 65px;
+    font-size: 18px;
+    text-align: center;
+
+    a {
+      color: $pink;
+      padding: 5px 5px;
+
+      &:hover {
+        background: $pink;
+        padding: 5px 5px;
+        color: $font;
+      }
+    }
+  }
+}
+
+.nav-panel > .nav {
+  background-color: $bg;
+  color: #717777;
+
+  &:focus,
+  &:hover {
+    background-color: white !important;
+    color: #717777;
+  }
+}
+
+#calendar-month {
+  font-size: rem-calc(26);
+}
+
+#switch {
+  position: absolute;
+  right: -15px;
+  top: 68px;
+  width: 20px;
+  height: 50px;
+
+  span {
+    position: absolute;
+    right: 17px;
+  }
+}
+
+.f-dropdown li a:hover {
+  color: $pink;
+  background: white;
+}
+
+.prev-month, .next-month {
+  color: #eeeeee;
+}
+
+.event-type {
+  background: #7d89a1;
+  color: $font;
+  margin-right: 10px;
+  padding: 5px;
+}

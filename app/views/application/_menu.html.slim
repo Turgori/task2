@@ -1,0 +1,11 @@
+ul.left-menu.stack.button-group
+  - if current_user
+    h3.title
+      = calendar_day(Date.today)
+    li = link_to "Calendar", calendar_path(date: Date.today, all: true), class: "small button"
+    li = link_to "Create event", new_event_path, class: "small button"
+    li = link_to "Edit profile", edit_user_registration_path, class: "small button"
+    li = link_to "Exit", destroy_user_session_path, method: "delete", class: "small button"
+  - else
+    li = link_to "Sign in", new_user_session_path, class: "small button"
+    li = link_to "Sign up", new_user_registration_path, class: "small button"

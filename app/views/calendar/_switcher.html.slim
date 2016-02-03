@@ -1,0 +1,6 @@
+- if params[:all] == "true"
+  = link_to calendar_path(@dates[:date]), class: "small button lightly", id: "switch"
+    span.switch-text My
+- else
+  = link_to calendar_path(@dates[:date], all: true), class: "small button lightly", id: "switch"
+    span.switch-text All

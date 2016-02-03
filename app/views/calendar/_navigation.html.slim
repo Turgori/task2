@@ -1,0 +1,6 @@
+= link_to "<<", calendar_path(@dates[:previous_month], all: params[:all]), class: "nav small button left"
+
+span#calendar-month
+  = calendar_title(@dates[:date])
+
+= link_to ">>", calendar_path(@dates[:next_month], all: params[:all]), class: "nav small button right"

@@ -1,0 +1,8 @@
+= month_calendar do |date|
+  - if @dates[:date].month == date.month && !@events[date.day].empty?
+    a[href="#" data-reveal-id="modal-#{date.day}"]
+      = date.day
+
+    = render "day_events", date: date
+  - else
+    = date.day

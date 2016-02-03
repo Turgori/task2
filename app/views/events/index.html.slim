@@ -1,0 +1,6 @@
+p
+  = link_to "Previous", events_path(params[:previous_month]), class: "small button success"
+  = link_to "Next", events_path(params[:next_month]), class: "small button success"
+  = month_calendar events: @events do |date, events|
+    = date
+    p = events.size
